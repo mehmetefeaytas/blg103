@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct ogrenci{
+    char isim[50];
+    int ogrenci_no;
+};
+
+void goster(struct ogrenci ogr){
+    printf("Isim %s", ogr.isim);
+    printf("\nNumara: %d\n",ogr.ogrenci_no);
+}
+
+int main(){
+    struct ogrenci bilgi;
+    printf("Ogrencinin ismini girin: ");
+    scanf("%s",&bilgi.isim);
+    printf("Ogrencinin numarasini girin: ");
+    scanf("%d",&bilgi.ogrenci_no);
+    goster(bilgi);
+}
