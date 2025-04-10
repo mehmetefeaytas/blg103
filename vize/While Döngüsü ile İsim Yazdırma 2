@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sayi;
+    cout << "Bir sayı girin: ";
+    cin >> sayi;
+
+    int i = 0;
+    while (i < sayi) {
+        cout << "Mehmet Efe Aytas" << endl;
+        i++;
+    }
+
+    return 0;
+}
