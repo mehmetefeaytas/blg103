@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct deger{
+    int x,y;
+}degisken;
+
+int func(struct deger a){
+    printf("x= %d \n y= %d",a.x,a.y );
+}
+
+int main(){
+    degisken.x=234;
+    degisken.y=987;
+    func(degisken);
+}
