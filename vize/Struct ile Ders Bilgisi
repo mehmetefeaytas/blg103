@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+struct ders {
+    char ad[50];
+    int kredi;
+};
+
+struct ogrenci {
+    char ad[50];
+    int numara;
+    struct ders dersBilgisi;
+};
+
+int main() {
+    struct ogrenci bilgi1 = { 
+        "Ali", 
+        24, 
+        {"Matematik", 4}
+    };
+
+    printf("\n---Ogrenci Bilgileri---\n");
+    printf("Isim: %s, Numara: %d, Ders: %s (Kredi: %d)\n", 
+           bilgi1.ad, 
+           bilgi1.numara, 
+           bilgi1.dersBilgisi.ad,  
+           bilgi1.dersBilgisi.kredi);
+
+    return 0;
+}
