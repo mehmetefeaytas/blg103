@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    char *ad = "Mehmet Efe Aytas";
+    printf("Benim adim: %s\n", ad);
+    return 0;
+}
