@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+struct bolum {
+    char ad[50];
+    int ogrsay;
+};
+
+struct fakulte {
+    char ad[50];
+    struct bolum bolumBilgi;  
+};
+
+struct uni {
+    char ad[50];
+    struct fakulte fakulteBilgi;
+};
+
+int main() {
+    struct uni bilgi = { 
+        "Gedik", 
+        {
+            "Muhendislik", 
+            {
+                "Bilgisayar Muhendisligi", 
+                300
+            }
+        }
+    };
+
+    printf("Uni: %s\nFak: %s\nBolum: %s\nOgr Say: %d\n", 
+           bilgi.ad, 
+           bilgi.fakulteBilgi.ad, 
+           bilgi.fakulteBilgi.bolumBilgi.ad,  
+           bilgi.fakulteBilgi.bolumBilgi.ogrsay);
+
+    return 0;
+}
