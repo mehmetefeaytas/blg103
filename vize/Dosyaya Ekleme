@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    FILE *fyaz;
+    fyaz = fopen("ornek.txt", "a");
+    
+    if(fyaz==NULL){
+        printf("dosya yok");
+        return 1;
+    }
+    fputs("yeni satır\n",fyaz);
+    fclose(fyaz);
+    printf("islem tamam");
+    return 0;
+}
