@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int gun;
+    cout << "Lütfen 1 ile 7 arasında bir sayı girin: ";
+    cin >> gun;
+
+    switch(gun) {
+        case 1:
+            cout << "Pazartesi" << endl;
+            break;
+        case 2:
+            cout << "Salı" << endl;
+            break;
+        case 3:
+            cout << "Çarşamba" << endl;
+            break;
+        case 4:
+            cout << "Perşembe" << endl;
+            break;
+        case 5:
+            cout << "Cuma" << endl;
+            break;
+        case 6:
+            cout << "Cumartesi" << endl;
+            break;
+        case 7:
+            cout << "Pazar" << endl;
+            break;
+        default:
+            cout << "Geçersiz bir sayı girdiniz!" << endl;
+    }
+
+    return 0;
+}
