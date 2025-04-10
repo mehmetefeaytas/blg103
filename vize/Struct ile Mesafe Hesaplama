@@ -1,0 +1,18 @@
+#include <stdio.h>
+struct deger{
+    int adim1,adim2;
+}degisken;
+
+int func(struct deger a){
+    printf("Ilk mesafe bilgileri\n");
+    printf("Adim sayisini girin:",a.adim1);
+    scanf("%d",&a.adim1);
+    printf("Ikinci mesafe bilgileri\n");
+    printf("Adim sayisini girin:",a.adim2);
+    scanf("%d",&a.adim2);
+    printf("Toplam mesafe %d", a.adim1+a.adim2);
+}
+
+int main(){
+    func(degisken);
+}
