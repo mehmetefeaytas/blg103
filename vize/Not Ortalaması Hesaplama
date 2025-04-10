@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+main(){
+    int vize,final,ortalama;
+    cout<<"Vize gir";
+    cin>>vize;
+    cout<<"Final gir";
+    cin>>final;
+    ortalama=(vize*0.3+final*0.7);
+    cout<<"Ortalama"<<ortalama<<endl;
+    if(ortalama>50){
+        cout<< "gecti";
+    }
+    else {
+        cout<< "kaldi";
+    }
+}
