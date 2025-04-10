@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+double topla(double a, double b) {
+    return a + b;
+}
+
+double cikar(double a, double b) {
+    return a - b;
+}
+
+double carp(double a, double b) {
+    return a * b;
+}
+
+double bol(double a, double b) {
+    if (b != 0) {
+        return a / b;
+    } else {
+        cout << "Hata: 0'a bölme hatası!" << endl;
+        return 0;
+    }
+}
+
+int main() {
+    double num1, num2;
+    cout << "Birinci sayıyı girin: ";
+    cin >> num1;
+    cout << "İkinci sayıyı girin: ";
+    cin >> num2;
+
+    cout << "Toplama: " << topla(num1, num2) << endl;
+    cout << "Çıkarma: " << cikar(num1, num2) << endl;
+    cout << "Çarpma: " << carp(num1, num2) << endl;
+    cout << "Bölme: " << bol(num1, num2) << endl;
+
+    return 0;
+}
