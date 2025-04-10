@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sayi;
+    cout << "Bir sayı girin: ";
+    cin >> sayi;
+
+    int i = 0;
+    while (i < sayi) {
+        int j = 0;
+        while (j < sayi) {
+            cout << "@";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+
+    return 0;
+}
