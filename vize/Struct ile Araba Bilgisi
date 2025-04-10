@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+struct araba {
+    char marka[50];
+    char model[50];
+    float yil;
+};
+
+int main() {
+    struct araba bilgi[2] = {
+        {"toyota", "corolla", 2018},
+        {"ford", "fiesta", 2013}
+    };
+
+    printf("\n---Araba Bilgileri---\n");
+    for (int i = 0; i < 2; i++) {
+        printf("Marka: %s, Model: %s, Yil: %.0f\n", bilgi[i].marka, bilgi[i].model, bilgi[i].yil);
+    }
+
+    return 0;
+}
