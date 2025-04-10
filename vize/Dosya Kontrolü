@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+#define basarili 0
+#define hata_dosya_yok 1
+#define hata_dosya_bulunamadi 2
+int main(){
+    FILE *file;
+    file = fopen("data.txt", "r");
+    
+    if(file==NULL){
+        printf("dosya yok");
+        return hata_dosya_yok ;
+    }
+    fclose(file);
+    return basarili;
+}
