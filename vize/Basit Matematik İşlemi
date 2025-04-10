@@ -1,0 +1,5 @@
+#include <iostream>
+using namespace std;
+main(){
+    cout <<"Sonuc:  "<<12/3<<endl;
+}
