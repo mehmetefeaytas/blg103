@@ -1,0 +1,15 @@
+#include <stdio.h>
+struct zaman_yapisi{
+    char saat,dakika,saniye;
+}yapi_degiskeni;
+
+int func(struct zaman_yapisi uzanti){
+    printf("%d %d %d",uzanti.saat,uzanti.dakika,uzanti.saniye);
+}
+
+int main(){
+    yapi_degiskeni.saat=10;
+    yapi_degiskeni.dakika=20;
+    yapi_degiskeni.saniye=30;
+    func(yapi_degiskeni);
+}
