@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+main(){
+    int sayi;
+    cout<<"sayi gir";
+    cin>>sayi;
+    if(sayi%2==0){
+        cout<<"cift";
+    }
+    else {
+        cout<<"tek";
+    }
+}
