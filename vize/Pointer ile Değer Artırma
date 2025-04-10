@@ -1,0 +1,11 @@
+#include <stdio.h>
+void ekleme (int*ptr){
+    (*ptr)++;
+}
+
+main(){
+    int* p,i=10;
+    p=&i;
+    ekleme(p);
+    printf("%d",*p);    
+}
