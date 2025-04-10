@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct uygula {
+    char ad[50], soyad[50], memleket[50];
+};
+
+int main() {
+    struct uygula giris = {"Mehmet Efe", "Aytas", "Kars"};
+    printf("%s %s %s", giris.ad, giris.soyad, giris.memleket);
+    return 0;
+}
