@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    int sf=20, osf=0, g=0;
+    while(osf<5000){
+        osf += sf;
+        sf+= 6;
+        g ++;
+    }
+    printf("%d biter",g);
+}
