@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+main(){
+    int* pc,p;
+    p=22;
+    printf("pnin adresi: %p\n",&p);
+    printf("pnin degeeri: %d\n",p);
+
+    pc=&p;
+    printf("pcnin adresi: %p\n",&pc);
+    printf("pcnin icerigi: %d\n",*pc);    
+
+    p=11;
+    printf("pnin adresi: %p\n",&p);
+    printf("pnin icerigi: %d\n",p);
+
+    *pc=2;
+    printf("pcnin adresi: %p\n",&pc);
+    printf("pcnin degeeri: %d\n",*pc);    
+
+    return 0;
+}
