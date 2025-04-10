@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Araba {
+    public:
+        string model;
+        int hiz;
+        Araba(string m, int h){
+            model = m;
+            hiz = h;
+        }
+        
+        void arabaBilgileriniGoster(){
+            cout << "Araba Modeli: " << model
+            <<", Hiz: "<<hiz
+            <<" km/s"<<endl;
+        }
+};
+
+class SporAraba : public Araba {
+    public: 
+    SporAraba(string m, int h) : Araba(m, h){
+    }
+    void sporArabaBilgileriniGoster(){
+        cout << "Spor araba modeli" << model
+        <<". Hiz: "<<hiz
+        <<" km/s"<<endl;
+    }
+};
+
+int main(){
+    Araba araba1("BMW", 120);
+    araba1.arabaBilgileriniGoster();
+
+    SporAraba sporAraba1("Ferrari", 220);
+    sporAraba1.sporArabaBilgileriniGoster();
+}
