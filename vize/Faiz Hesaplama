@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+main(){
+    int para, faiz, vade;
+    cout<<"Ana parayi gir";
+    cin>> para;
+    cout<<"Faiz orani gir";
+    cin>> faiz;
+    cout<<"Vadeyi gir";
+    cin>> vade;
+    cout<<"----cikis----";
+    cout<<"Ana parayi "<< para<<endl;
+    cout<<"Faiz orani % "<<faiz<<endl;
+    cout<<"Vadeyi "<<vade<<endl;
+    cout<<"Faiz "<<para*faiz*vade/100;
+}
