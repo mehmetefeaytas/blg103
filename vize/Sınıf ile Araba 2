@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class araba {
+    public:
+        string marka;
+        int hiz;
+        void hizlan(int miktar){
+            hiz += miktar;
+        }
+        void yavasla(int miktar){
+            hiz -= miktar;
+            if (hiz < 0) hiz = 0;
+        }
+        void bilgileriGoster(){
+            cout << "Araba markası: " << marka << ", hız: " << hiz << " km/h" << endl;
+        }
+};
+
+int main(){
+    araba araba1;
+    araba1.marka = "Toyota";
+    araba1.hiz = 0;
+
+    araba1.hizlan(50);
+    araba1.bilgileriGoster();
+
+    araba1.yavasla(20);
+    araba1.bilgileriGoster();
+}
