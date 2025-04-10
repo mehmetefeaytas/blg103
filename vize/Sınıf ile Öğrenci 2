@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+struct Ders {
+    string dersAdi;
+    int kredi;
+};
+
+class Ogrenci {
+private:
+    string ad;
+    int yas;
+    Ders ders;
+    
+public:
+    Ogrenci(string isim, int y, string dersAdi, int k) {
+        ad = isim;
+        yas = y;
+        ders.dersAdi = dersAdi;
+        ders.kredi = k;
+    }
+
+    void bilgileriGoster() {
+        cout << "Ogrenci Adi: " << ad << ", yas: " << yas << endl;
+        cout << "Aldigi Ders: " << ders.dersAdi << ", kredi: " << ders.kredi << endl;
+    }
+};
+
+int main() {
+    Ogrenci ogrenci1("Efe", 19, "Fen", 4);
+    ogrenci1.bilgileriGoster();
+}
