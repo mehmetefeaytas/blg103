@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    FILE *fyaz;
+    fyaz = fopen("ornek.txt", "w");
+    
+    if(fyaz==NULL){
+        printf("dosya yok");
+        return 1;
+    }
+    fprintf(fyaz, "    \n");
+    fprintf(fyaz, "c prog\n");
+    fclose(fyaz);
+    printf("islem tamam");
+    return 0;
+}
